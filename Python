@@ -1,0 +1,15 @@
+1. What modules/libraries are you most familiar with? What do you like or dislike about them?
+   - Numpy
+   - Pandas
+   - matplotlib
+   - scipy
+   - sklearn
+   - Tensorflow
+   
+2. What are the supported data types in Python?
+   List, Boolean, Float, Integer, Dictionary, Tuple, Numpy Array
+   
+3. What is the difference between a tuple and a list in Python?
+List is mutable and tuples is immutable. The main difference between mutable and immutable is memory usage
+when you are trying to append an item. When you create a variable, some fixed memory is assigned to the variable. 
+If it is a list, more memory is assigned than actually used.
