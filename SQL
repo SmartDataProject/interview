@@ -28,3 +28,10 @@ Outer joins are specified with one of the following sets of keywords when they a
 
 5. If a table contains duplicate rows, does a query result display the duplicate values by default? 
 How can you eliminate duplicate rows from a query result?
+When the result set from a SELECT statement contains duplicate rows, you may want to remove them and keep every row data to be unique
+for a column or combination of columns. You can use the DISTINCT or DISTINCTROW identifier to eliminate duplicate records. 
+DISTINCT and DISTINCTROW are synonyms and specify removal of duplicate rows from the result set.
+- In a SELECT statement, include DISTINCT or DISTINCTROW keyword after the SELECT clause.
+- Multiple columns can be specified after DISTINCT or DISTINCTROW keyword.
+In this case, the result set contains distinct combination of data from these columns.
+
