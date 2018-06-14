@@ -1,0 +1,10 @@
+2. What is linear regression?
+
+3. What are the assumptions required for linear regression?
+There are four major assumptions: 
+- There is a linear relationship between the dependent variables and the regressors, 
+meaning the model you are creating actually fits the data, 
+- The errors or residuals of the data are normally distributed and independent from each other, 
+- There is minimal multicollinearity between explanatory variables,and 
+- Homoscedasticity. This means the variance around the regression line is the same for all values of the predictor variable.
+
