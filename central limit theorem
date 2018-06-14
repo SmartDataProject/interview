@@ -17,3 +17,5 @@ Most sources state that for most applications N = 30 is sufficient.
 
 In general, mean of the sampling distribution of the sample mean equals to the mean of the original population
 Variance of the sampling distribution of the sample mean equals to the variance of the original population divided by the sample size.
+
+https://www.khanacademy.org/math/ap-statistics/sampling-distribution-ap/sampling-distribution-mean/v/central-limit-theorem
