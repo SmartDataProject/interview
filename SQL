@@ -1,0 +1,7 @@
+What is the purpose of the group functions in SQL? Give some examples of group functions.
+Group functions are necessary to get summary statistics of a dataset. COUNT, MAX, MIN, AVG, SUM, and DISTINCT are all group functions
+Tell me the difference between an inner join, left join/right join, and union.
+Answer
+What does UNION do? What is the difference between UNION and UNION ALL?
+What is the difference between SQL and MySQL or SQL Server?
+If a table contains duplicate rows, does a query result display the duplicate values by default? How can you eliminate duplicate rows from a query result?
