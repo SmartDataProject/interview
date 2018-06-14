@@ -1,5 +1,38 @@
 4. What do the terms Hypothesis testing, P-value, coefficient, R-Squared value mean?
    
    - Hypothesis testing: based on probability, a method of making decisions about population by using a sample data 
+   
    - process:
      1) define study question and choose test: what variables will be used to test the question?
+     2) set null and alternative hypothesis: statement that you are looking for evidence to disprove (easier to disprove than prove)
+     e.g. there is no difference in the population means
+     e.g. there is no relationship between class and survival
+     e.g. the mean weekly hours for people in the UK are the same as in Germany
+     3)  calculate a test statistic and it's p-value:
+     Test statistic is a number calculated from sample data to decide whether to reject the NH about the population or not (varies by test 
+     but generally either comparess the observed and expected values or a difference divided by variability)
+     If you repeated the study numerous times you would get a variety of test statistics which form a distribution
+     p-value is the probablity of getting a test statistic as extreme as the one calcuated from the sample data, if the NH is true.
+     4) compare p-value with a cutoff value/significant level (such as 0.05 and 0.01)
+     5) make a decision and conclusion
+     if p-value < 0.05, the results are statistically significant, evidence to reject NH
+     if p-value < 0.01, strong evidence to reject the NH
+     
+   - R-squared:
+     R-squared is selected as the statistical index to measure how well different machine learning algorithms built from the 
+     input data perform. R-squared is defined as:
+     R^2=1-  RSS/TSS
+     Where RSS is the residual sum of squares:
+       ∑▒〖(y_true-y_predict)〗^2 
+     And TSS is the total sum of squares:
+       ∑▒〖(y_true-mean_of_y_true)〗^2 
+     R-squared measures the proportion of variability in the output variable Y that can be explained using the model built
+     from the input data X.  The best prediction result is when R-squared is equal to 1. 
+     When R-squared is equal to 0, it means the machine learning model makes a constant prediction with the expected value 
+     of the output variable Y. In this case, R-squared can be negative when the model is really worse near a random prediction.  
+     
+5. What is the difference between Type I vs Type II error?
+Whether you decided to reject the NH or not, you may make a mistake
+   - Type 1 error: probability to reject the NH when it is actually true, equal to the p-value, False Positive
+   - Type 2 error: probability not to reject the NH when it is false, False Negative (e.g. releasing a guilty man)
+
