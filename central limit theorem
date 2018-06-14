@@ -1,0 +1,19 @@
+1. What is the Central Limit Theorem and why is it important?
+
+In situations, such as the original problem we discussed of estimating average human height,
+we won’t know the true population mean and variance. 
+Understanding the nuances of sampling distributions and the Central Limit Theorem is an 
+essential first step toward talking many of these problems.
+
+Formally, it states that if we sample from a population using a sufficiently large sample size, 
+the mean of the samples (also known as the sample population) will be normally distributed (assuming true random sampling). 
+What’s especially important is that this will be true regardless of the distribution of the original population.
+As the sample size N is increased, the resultant sample mean distribution becomes more normal. 
+
+Further, the distribution variance also decreases. we are considering more samples when using a larger sample size, 
+and are more likely to get a representative sample of the population. So roughly speaking, if the sample size used is large enough, 
+there is a good chance that it will estimate the population pretty well. 
+Most sources state that for most applications N = 30 is sufficient.
+
+In general, mean of the sampling distribution of the sample mean equals to the mean of the original population
+Variance of the sampling distribution of the sample mean equals to the variance of the original population divided by the sample size.
