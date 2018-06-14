@@ -1,18 +1,27 @@
 2. What is linear regression?
+Linear regression is an analysis that assesses whether one or more predictor variables explain the dependent (criterion) variable. 
    - is there a linear relationship? scatter plot
-   - is it significant? p<0.05 then the predictor is a significant predictor
+   - is it significant? (test statistic: beta1 is far from 0 or not) if p<0.05 then the predictor is a significant predictor
+     confidence interval of beta0 and beta1
    - interpret the coefficients
    - R-squared: how much variance is explained by the model
    - have the assumptions been met? Histogram of residual is normally distributed and no pattern in predicted value vas residual plot
    (if not, try ln(y) first)
+*A note about sample size: In Linear regression the sample size rule of thumb is that the regression analysis 
+requires at least 20 cases per independent variable in the analysis.
+*It is also important to check for outliers since linear regression is sensitive to outlier effects. 
    
 3. What are the assumptions required for linear regression?
 There are four major assumptions: 
    - the relationship between the independent and dependent variables is linear: scatter plot
+   - the linear regression analysis requires all variables to be multivariate normal.  
+     This assumption can best be checked with a histogram or a Q-Q-Plot.  
+     Normality can be checked with a goodness of fit test, e.g., the Kolmogorov-Smirnov test. 
+     When the data is not normally distributed a non-linear transformation (e.g., log-transformation) might fix this issue.
    - Homoscedasticity: the variance of the residuals about the predicted responses should be the same for all predicted responses.
      This means the variance around the regression line is the same for all values of the predictor variable.
      scatter plot of standardised predicted values (x) and standardised residuals(y), should be random, no apparent shape
    - The errors or residuals of the data are normally distributed: plot the residuals in a histogram
    - the residuals are independent: durbin watson statistic, There is minimal multicollinearity between explanatory variable
 
-
+http://www.statisticssolutions.com/assumptions-of-linear-regression/
