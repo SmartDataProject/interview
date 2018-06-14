@@ -1,0 +1,9 @@
+What are the different types of sorting algorithms available in R language?
+There are insertion, bubble, and selection sorting algorithms.
+What are the different data objects in R?
+What packages are you most familiar with? What do you like or dislike about them?
+How do you access the element in the 2nd column and 4th row of a matrix named M?
+What is the command used to store R objects in a file?
+What is the best way to use Hadoop and R together for analysis?
+How do you split a continuous variable into different groups/ranks in R?
+Write a function in R language to replace the missing value in a vector with the mean of that vector.
