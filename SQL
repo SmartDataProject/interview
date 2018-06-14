@@ -23,11 +23,34 @@ Outer joins are specified with one of the following sets of keywords when they a
 
 
 3. What does UNION do? What is the difference between UNION and UNION ALL?
+Both UNION and UNION ALL concatenate the result of two different SQLs. They differ in the way they handle duplicates.
+UNION performs a DISTINCT on the result set, eliminating any duplicate rows.
+UNION ALL does not remove duplicates, and it therefore faster than UNION.
+nion is much less performant as it must scan the result for duplicates 
 
 4. What is the difference between SQL and MySQL or SQL Server?
+SQL stands for Structured Query Language. It’s a standard language for accessing and manipulating databases. 
 
+MySQL is a database management system, like SQL Server, Oracle, Informix, Postgres, etc. 
+MySQL is a RDMS (Relational Database Management System).
+When considering a utility for data management the two most popular choices are MySQL and SQL Server. 
+Both are efficient at keeping your data organized and readily available through a user interface. 
+Both technologies have the concept of schema (that is table storage) for data storage.
+
+difference between SQL server and MySQL:
+ - MYSQL available for free since it is open source, But SQL is not open source.
+ - MYSQL offers only updateable views, SQL offers indexed views which are much more powerful, performing wise.
+ - MYSQL doesn't support XML, Where as SQL supports it.
+ - Auto tuning is not supported in MYQL, But can in SQL.
+ - User defined functions are not supported in MYSQL, But supported in SQL.
+ - Transaction support is very much limited in MYSQL, But extensively and fully offered in SQL.
+ - Stored procedures and full joins not offered in MYSQL, But offered in SQL.
+ - Cursor feature is not there in MYSQL but is there in SQL
+ - Job scheduling and profiling not available in MYSQL, But available is SQL.
+ 
 5. If a table contains duplicate rows, does a query result display the duplicate values by default? 
 How can you eliminate duplicate rows from a query result?
+
 When the result set from a SELECT statement contains duplicate rows, you may want to remove them and keep every row data to be unique
 for a column or combination of columns. You can use the DISTINCT or DISTINCTROW identifier to eliminate duplicate records. 
 DISTINCT and DISTINCTROW are synonyms and specify removal of duplicate rows from the result set.
