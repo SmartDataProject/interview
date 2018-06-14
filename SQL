@@ -1,7 +1,30 @@
-What is the purpose of the group functions in SQL? Give some examples of group functions.
+1.What is the purpose of the group functions in SQL? Give some examples of group functions.
 Group functions are necessary to get summary statistics of a dataset. COUNT, MAX, MIN, AVG, SUM, and DISTINCT are all group functions
-Tell me the difference between an inner join, left join/right join, and union.
-Answer
-What does UNION do? What is the difference between UNION and UNION ALL?
-What is the difference between SQL and MySQL or SQL Server?
-If a table contains duplicate rows, does a query result display the duplicate values by default? How can you eliminate duplicate rows from a query result?
+
+2. Tell me the difference between an inner join, left join/right join, and union.
+   - INNER JOIN: (the typical Join operation, which uses some comparison operator like = or ). These include equi-joins and natural joins.
+Inner Joins use a comparison operator to match rows from two tables based on the values in common columns from each table.
+
+   - OUTER JOIN: Outer joins can be a Left, a Right, or Full Outer Join.
+Outer joins are specified with one of the following sets of keywords when they are specified in the FROM clause:
+
+   1) LEFT JOIN or LEFT OUTER JOIN: The result set of a Left Outer Join includes all the rows from the left table specified in 
+   the LEFT OUTER clause, not just the ones in which the joined columns match. 
+   When a row in the left table has no matching rows in the right table, 
+   the associated result set row contains null values for all select list columns coming from the right table.
+
+   2) RIGHT JOIN or RIGHT OUTER JOIN: A Right Outer Join is the reverse of a Left Outer Join. 
+   All rows from the right table are returned. Null values are returned for the left table any time a right table row
+   has no matching row in the left table.
+
+   3) FULL JOIN or FULL OUTER JOIN: A Full Outer Join returns all rows in both the Left and Right tables. 
+   Any time a row has no match in the other table, the select list columns from the other table contain null values.
+   When there is a match between the tables, the entire result set row contains data values from the base tables.
+
+
+3. What does UNION do? What is the difference between UNION and UNION ALL?
+
+4. What is the difference between SQL and MySQL or SQL Server?
+
+5. If a table contains duplicate rows, does a query result display the duplicate values by default? 
+How can you eliminate duplicate rows from a query result?
